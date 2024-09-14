@@ -1,0 +1,54 @@
+/* Styles for the cards */
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    border: 1px solid #1f1f1f;
+    border-radius: 10px;
+    color: white;
+    border-radius: 10px; /* Bordes redondeados opcional */
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Ancho máximo de la tarjeta */
+}
+
+.card img {
+    width: 150px; /* Tamaño de la imagen */
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card__button:hover {
+    background-color: #0056b3;
+}
+
+.card span.material-symbols-outlined {
+    vertical-align: middle;
+}
