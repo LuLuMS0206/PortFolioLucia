@@ -1,11 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
 body {
+    font-family: 'Montserrat';
+    background-color: rgb(233, 236, 239);
+}
+
+.max-width{
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    // background-image: url('assets/img/background.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-color: rgb(58, 58, 58);
+}
+
+*{
+    margin: 0;
 }
