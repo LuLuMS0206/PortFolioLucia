@@ -1,13 +1,57 @@
 .contact__img{
-    width: 8%;
+    width: 1.5%;
     filter: invert(100%) brightness(1000%);
+margin-top: 1.5rem;
+transition: transform 0.3s ease, filter 0.3s ease, margin-top 0.3s ease;
 }
 
+.contact__img:hover{
+    transform: scale(1.2); 
+}
+
+.contact__content{
+    display: flex;
+}
 .contact__p{
     display: flex;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .contact__icon{
     margin-right: 1rem;
+    transition: transform 0.3s ease, filter 0.3s ease, margin-top 0.3s ease;
 }
+
+.contact__icon:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+
+.contact{
+    background: linear-gradient(270deg, #1c1c1c, #2a2a2a, #3b3b3b, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientBackground 20s ease infinite;
+    padding: 2rem 2rem;
+    color: white;
+}
+
+.contact__title{
+    margin-bottom: 3rem;
+    font-size: 26px;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+    }

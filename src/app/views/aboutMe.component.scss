@@ -1,14 +1,40 @@
-// .about {
-//     padding: 6.25rem 1.25rem;
-//     color: white;
-//     text-align: center; 
-// }
-
-// .about__name{
-//     font-size: 70px;
-// }
-
-.about__img{
-    width: 8%;
-    filter: invert(100%) brightness(1000%);
+.about {
+    background: linear-gradient(270deg, #1c1c1c, #2a2a2a, #3b3b3b, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientBackground 20s ease infinite;
+    padding: 5rem 0rem;
+    color: white;
 }
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+    }
+
+    .about__img {
+        width: 5%;
+        filter: invert(100%) brightness(1000%);
+        margin-top: 2rem;
+    }
+    
+
+    .about__title{
+        margin-bottom: 3rem;
+        font-size: 26px;
+    }
+
+    .about__p{
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        width: 60%;
+        line-height: 2.125rem;
+    }
