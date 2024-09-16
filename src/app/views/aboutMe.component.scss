@@ -22,7 +22,6 @@
 
     .about__img {
         width: 5%;
-        filter: invert(100%) brightness(1000%);
         margin-top: 2rem;
         transition: transform 0.3s ease, filter 0.3s ease, margin-top 0.3s ease;
     }
