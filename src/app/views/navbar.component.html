@@ -5,9 +5,9 @@
     <span class="material-symbols-outlined navbar__toggle" (click)="toggleMenu()">
         menu
     </span>
-    
+
     <!-- Lista de navegación -->
-    <ul class="navbar__list" id="navbar-list">
+    <ul class="navbar__list" [ngClass]="{'active': isMenuOpen}">
         <li class="navbar__item">
             <a href="#projects" class="navbar__link">Proyectos</a>
         </li>

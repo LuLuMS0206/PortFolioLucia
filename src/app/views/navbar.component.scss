@@ -49,7 +49,6 @@
     text-decoration: underline;
 }
 
-
 .navbar__toggle {
     font-size: 2rem;
     color: #313131;
@@ -65,24 +64,29 @@
         gap: 1rem;
         position: absolute;
         top: 70px;
-        right: 1.25rem;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 200px;
-        text-align: center;
+        transform: translateY(-100%); /* Posicionado fuera de la vista */
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
-
 
     .navbar__list.active {
         display: flex;
+        opacity: 1; 
+        transform: translateY(0);
     }
 
     .navbar__toggle {
         display: block;
     }
 
-    .navbar__brand{
+    .navbar__brand {
         font-size: 1.2rem;
     }
-}
+
+    .navbar__link{
+        font-size: 0.8rem;
+    }
+    }
+
+
+
+
