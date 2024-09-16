@@ -1,18 +1,17 @@
-.projects{
+.projects {
     margin-top: 6rem;
 }
 
 .projects__list {
     display: flex;
     flex-direction: column;
-    gap: 4.25rem
+    gap: 4.25rem;
 }
 
-.projects__title{
+.projects__title {
     margin-bottom: 3rem;
     font-size: 26px;
 }
-
 
 .card {
     display: flex;
@@ -57,10 +56,10 @@
     padding: 0rem 4rem;
 }
 
-.card__content__p{
-margin-top: 1rem;
-margin-bottom: 2rem;
-font-size: 1.1rem;
+.card__content__p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
 .responsive-tag {
@@ -69,7 +68,7 @@ font-size: 1.1rem;
     border-radius: 12px;
 }
 
-.card__content__title{
+.card__content__title {
     margin-bottom: 2rem;
     font-size: 30px;
 }
@@ -85,13 +84,45 @@ font-size: 1.1rem;
 }
 
 .card__button:hover {
-    background-color: #1a1b1c;
+    background-color: #343434;
 }
 
 .card span.material-symbols-outlined {
     vertical-align: middle;
 }
 
-.card__icon{
-margin-right: 0.5rem;
+.card__icon {
+    margin-right: 0.5rem;
+}
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .card__img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .card__content {
+        padding: 0;
+    }
+
+    .card__content__title {
+        margin-bottom: 1rem;
+        font-size: 24px;
+    }
+
+    .card__content__p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .responsive-tag {
+        font-size: 0.9rem;
+    }
 }
