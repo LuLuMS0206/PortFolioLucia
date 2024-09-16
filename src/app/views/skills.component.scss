@@ -49,3 +49,9 @@
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 2rem 2rem;
+    }
+}
