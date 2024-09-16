@@ -10,7 +10,7 @@
 
 .projects__title {
     margin-bottom: 3rem;
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 .card {
@@ -70,18 +70,24 @@
 
 .card__content__title {
     margin-bottom: 2rem;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .card__button {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     background-color: #6e6e6e;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
+
+.card__buttons {
+    display: flex;
+gap: 2rem;
+}
+
 
 .card__button:hover {
     background-color: #343434;
@@ -95,12 +101,9 @@
     margin-right: 0.5rem;
 }
 
-/* Media Query para pantallas móviles */
 @media (max-width: 768px) {
     .card {
         flex-direction: column;
-        text-align: center;
-        padding: 2rem;
     }
 
     .card__img {
@@ -114,15 +117,19 @@
 
     .card__content__title {
         margin-bottom: 1rem;
-        font-size: 24px;
+        font-size: 1.25rem;
     }
 
     .card__content__p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 1.5rem;
     }
 
     .responsive-tag {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .projects{
+        padding: 0rem 2rem;
     }
 }

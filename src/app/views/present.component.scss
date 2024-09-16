@@ -7,6 +7,7 @@
     color: #313131;
 }
 
+
 @keyframes gradientBackground {
     0% {
         background-position: 0% 50%;
@@ -44,4 +45,22 @@
     text-decoration: none;
     font-size: 1.3rem;
     border: none;
+}
+
+@media (max-width: 700px) {
+    .present {
+        padding: 8rem 1.5rem;
+    }
+
+    .present__title{
+        font-size: 0.9rem;
+    }
+
+    .present__p{
+        font-size: 1rem;
+    }
+
+    .present__button{
+        font-size: 0.9rem;
+    }
 }

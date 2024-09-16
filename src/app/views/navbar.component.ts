@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-navbar",
@@ -6,20 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./navbar.component.scss"]
 })
 
-export class NavbarComponent implements OnInit {
-  
-  // clickButton: boolean = false;
-  // showText: boolean = false;
+export class NavbarComponent {
+  isMenuOpen = false; 
 
-  constructor() { 
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen; 
   }
 
-  ngOnInit() {
-
-  }
-
-  // mostrarTexto(){
-  //   this.showText = true;
-  // }
 }
