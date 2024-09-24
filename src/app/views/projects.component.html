@@ -4,17 +4,22 @@
     <div class="projects__list">
         <!-- Card Oxygen Shop -->
         <div class="card">
-            <!-- <img class="card__img" src="./../../assets/img/oxygenshop.JPG" alt=""> -->
-            <video class="card__img" src="./../../assets/video/oxygen.mp4" type="video-mp4" autoplay loop muted></video>
+
+            <video class="card__img" src="./../../assets/video/oxygen.mp4" type="video-mp4" autoplay loop muted #videoElement
+                (mouseenter)="playVideo(videoElement)" (mouseleave)="pauseVideo(videoElement)"></video>
             <div class="card__content">
                 <h3 class="card__content__title">Oxygen Shop</h3>
                 <span class="responsive-tag">Responsive</span>
-                <p class="card__content__p">"Una landing page con diversas funcionalidades dinámicas y llamativas, desarrollada con HTML, SCSS y JavaScript. Ofrece una experiencia de usuario fluida y adaptada a diferentes dispositivos."</p>
+                <p class="card__content__p">"Una landing page con diversas funcionalidades dinámicas y llamativas,
+                    desarrollada con HTML, SCSS y JavaScript. Ofrece una experiencia de usuario fluida y adaptada a
+                    diferentes dispositivos."</p>
                 <div class="card__buttons">
-                    <a href="https://lulums0206.github.io/Proyecto-final-Modulo-1/" class="card__button" target="_blank">
+                    <a href="https://lulums0206.github.io/Proyecto-final-Modulo-1/" class="card__button"
+                        target="_blank">
                         <span class="material-symbols-outlined card__icon">bubble</span> Ir a la web
                     </a>
-                    <a href="https://github.com/LuLuMS0206/Proyecto-final-Modulo-1" class="card__button" target="_blank">
+                    <a href="https://github.com/LuLuMS0206/Proyecto-final-Modulo-1" class="card__button"
+                        target="_blank">
                         <span class="material-symbols-outlined card__icon">code</span> Código
                     </a>
                 </div>
@@ -22,17 +27,21 @@
         </div>
         <!-- Card Image Search -->
         <div class="card">
-            <!-- <img class="card__img" src="./../../assets/img/myphotos.JPG" alt=""> -->
-                <video class="card__img" src="./../../assets/video/webFotos.mp4" type="video-mp4" autoplay loop muted></video>
+            <video class="card__img" src="./../../assets/video/webFotos.mp4" autoplay type="video-mp4" loop muted #videoElement
+            (mouseenter)="playVideo(videoElement)" (mouseleave)="pauseVideo(videoElement)"></video>
             <div class="card__content">
                 <h3 class="card__content__title">Buscador de Imágenes</h3>
                 <span class="responsive-tag">Responsive</span>
-                <p class="card__content__p">"Aplicación web para la búsqueda de fotos, desarrollada con React, TypeScript y Redux. Incorpora integración con API y ofrece una experiencia de usuario fluida y moderna a través de una interfaz limpia y bien diseñada."</p>
+                <p class="card__content__p">"Aplicación web para la búsqueda de fotos, desarrollada con React,
+                    TypeScript y Redux. Incorpora integración con API y ofrece una experiencia de usuario fluida y
+                    moderna a través de una interfaz limpia y bien diseñada."</p>
                 <div class="card__buttons">
-                    <a href="http://myphotosreact.s3-website.eu-west-3.amazonaws.com" class="card__button" target="_blank">
+                    <a href="http://myphotosreact.s3-website.eu-west-3.amazonaws.com" class="card__button"
+                        target="_blank">
                         <span class="material-symbols-outlined card__icon">bubble</span> Ir a la web
                     </a>
-                    <a href="https://github.com/LuLuMS0206/Proyecto-React-MyPhotos" class="card__button" target="_blank">
+                    <a href="https://github.com/LuLuMS0206/Proyecto-React-MyPhotos" class="card__button"
+                        target="_blank">
                         <span class="material-symbols-outlined card__icon">code</span> Código
                     </a>
                 </div>
@@ -41,12 +50,13 @@
 
         <!-- Card Hotel Miranda -->
         <div class="card">
-            <!-- <img class="card__img" src="./../../assets/img/hotelMiranda.JPG" alt=""> -->
-            <video class="card__img" src="./../../assets/video/hotelMirandaVideo.mp4" type="video-mp4" autoplay loop muted></video>
+            <video class="card__img" src="./../../assets/video/hotelMirandaVideo.mp4" autoplay type="video-mp4" loop muted #videoElement
+            (mouseenter)="playVideo(videoElement)" (mouseleave)="pauseVideo(videoElement)"></video>
             <div class="card__content">
                 <h3 class="card__content__title">Hotel Miranda</h3>
                 <span class="responsive-tag">Desktop and Mobile</span>
-                <p class="card__content__p">"Sitio web para el Hotel Miranda, con gran enfoque en los detalles visuales y una fluida experiencia de usuario. Desarrollado con Html, Sass y Javascript."</p>
+                <p class="card__content__p">"Sitio web para el Hotel Miranda, con gran enfoque en los detalles visuales
+                    y una fluida experiencia de usuario. Desarrollado con Html, Sass y Javascript."</p>
                 <div class="card__buttons">
                     <a href="https://lulums0206.github.io/Hotel-Miranda-/" class="card__button" target="_blank">
                         <span class="material-symbols-outlined card__icon">bubble</span> Ir a la web
@@ -60,14 +70,16 @@
 
         <!-- Card Dashboard Miranda -->
         <div class="card">
-            <!-- <img class="card__img" src="./../../assets/img/dashboard.JPG" alt=""> -->
-            <video class="card__img" src="./../../assets/video/dashboard.mp4" type="video-mp4" autoplay loop muted></video>
+            <video class="card__img" src="./../../assets/video/dashboard.mp4" autoplay type="video-mp4" loop muted #videoElement
+            (mouseenter)="playVideo(videoElement)" (mouseleave)="pauseVideo(videoElement)"></video>
             <div class="card__content">
                 <h3 class="card__content__title">Dashboard Miranda</h3>
                 <span class="responsive-tag">Desktop</span>
-                <p class="card__content__p">"Panel de control para gestión hotelera, permite manejar reservas, habitaciones y usuarios. Desarrollado con React, TypeScript y Redux."</p>
+                <p class="card__content__p">"Panel de control para gestión hotelera, permite manejar reservas,
+                    habitaciones y usuarios. Desarrollado con React, TypeScript y Redux."</p>
                 <div class="card__buttons">
-                    <a href="http://dashboard-miranda-aws.s3-website.eu-west-3.amazonaws.com" class="card__button" target="_blank">
+                    <a href="http://dashboard-miranda-aws.s3-website.eu-west-3.amazonaws.com" class="card__button"
+                        target="_blank">
                         <span class="material-symbols-outlined card__icon">bubble</span> Ir a la web
                     </a>
                     <a href="https://github.com/LuLuMS0206/Dashboard-Miranda" class="card__button" target="_blank">

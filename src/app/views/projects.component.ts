@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from "@angular/core";
+import { Component, OnInit, HostListener, QueryList, ViewChildren, ElementRef } from "@angular/core";
 
 @Component({
   selector: "app-projects",
@@ -6,33 +6,41 @@ import { Component, OnInit, HostListener } from "@angular/core";
   styleUrls: ["./projects.component.scss"]
 })
 export class ProjectsComponent implements OnInit {
+  @ViewChildren('videoElement') videoElements!: QueryList<ElementRef<HTMLVideoElement>>;
 
   constructor() {}
 
   ngOnInit() {
-    // Llama a esta función al cargar la página para asegurarse de que las cards visibles se animen al cargar.
     this.checkVisibility();
   }
 
-  // Escucha el evento de scroll
   @HostListener("window:scroll", [])
   onWindowScroll() {
     this.checkVisibility();
   }
 
-  // Verifica si las cards son visibles en el viewport
   checkVisibility() {
     const cards = document.querySelectorAll('.card');
-    const triggerPoint = window.innerHeight * 0.85; // Cuándo quieres que el efecto se inicie
+    const triggerPoint = window.innerHeight * 0.85;
 
     cards.forEach((card, index) => {
       const cardPosition = card.getBoundingClientRect().top;
-      
+
       if (cardPosition < triggerPoint) {
         setTimeout(() => {
           card.classList.add('visible');
-        }, index * 300); // Delay entre cada card
+        }, index * 300);
       }
     });
+  }
+
+  playVideo(video: HTMLVideoElement) {
+    video.play();
+  }
+
+
+  pauseVideo(video: HTMLVideoElement) {
+    video.pause();
+    video.currentTime = 0; 
   }
 }
